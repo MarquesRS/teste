@@ -118,7 +118,7 @@ body{
 .navbar-text__text {
   font-size: 1em;
   font-weight: 700;
-  color: #333;
+  color: #fff;
   text-decoration: none;
   transition: color .4s ease;
 }
@@ -133,7 +133,7 @@ body{
 }
 
 .link-wrapper__link {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 700;
   color: #777;
   text-decoration: none;
@@ -145,7 +145,7 @@ body{
   content: '';
   display:block;
   transform: scaleX(0);  
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .link-wrapper__link:hover:after {
@@ -171,19 +171,20 @@ body{
   align-items: center;
   width: 100vw;
   margin-top: 10vw;
-  margin-bottom: 13vw;
+  margin-bottom: 10vw;
 }
 
 .main__content {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
 }
 
 .main__about-container {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  width: 54%;
 }
 
 /* ABOUT */
@@ -192,17 +193,12 @@ body{
   font-weight: 300;
 }
 
-.main__about-container {
-  width: 55%;
-}
-
-
 .about-container__text-wrapper {
   height: 80%;
 }
 
 .text-wrapper__title {
-  font-size: 3.25em;
+  font-size: 2.8em;
   color: #fff;
   font-weight: 700;
   margin-bottom: 1vw;
@@ -210,11 +206,10 @@ body{
 
 .text-wrapper__paragraph {
   color: #fff;
-  line-height: 1.4;
-  font-size: 1.2em;
+  line-height: 1.8;
+  font-size: 1em;
   text-align: justify;
   margin-bottom: 1em;
-  font-weight: 400;
 }
 
 .text-wrapper__button-container {
@@ -227,13 +222,13 @@ body{
 .button-container__button-wrapper {
   box-sizing: border-box;
   background-color: #F5B63F;
-  padding: 0.8vw;
-  border-radius: 7px;
+  padding: 0.6vw;
+  border-radius: 5px;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #111;
   letter-spacing: 0.05em;
-  width: 9vw;
+  width: 8vw;
   display: flex;
   justify-content: center;
   transition: all 0.4s ease;
@@ -262,33 +257,33 @@ body{
 }
 
 .form-fields-container__input-wrapper {
-  padding-bottom: 1.5vw;
+  padding-bottom: 0.8vw;
   display: flex;
   justify-content: center;
 }
 
 .input-wrapper__form-input {
-  width: 30vw;
+  width: 25vw;
   padding: 1vw;
   background-color: #222;
   color: #fff;
   border: 1px solid #222;
-  border-radius: 7px;    
+  border-radius: 5px;    
   box-sizing: border-box;
   transition: 0.4s ease;
 }
 
 .input-wrapper__form-input-text {
-  width: 30vw;
-  height: 10vw;
+  width: 25vw;
+  height: 8vw;
   padding: 20px;
   background-color: #222;;
   color: #fff;
   border: 1px solid #fff;
   resize: none;
-  font-size: 1.1em;
+  font-size: 1em;
   border: 1px solid #111;
-  border-radius: 7px;
+  border-radius: 5px;
   box-sizing: border-box;
   transition: 0.4s ease;
 }
@@ -300,20 +295,20 @@ body{
 }
 
 .button-wrapper__button {
-  padding: 0.8vw;
-  width: 12vw; 
+  padding: 0.6vw;
+  width: 90%; 
   background-color: #F5B63F;
   font-weight: 700;
-  font-size: z;
+  font-size: 0.8em;
   color: #111;
-  border-radius: 7px;
+  border-radius: 5px;
   transition: all 0.4s ease;
   letter-spacing: 0.05em;
 }
 
 .button-wrapper__button:hover {
   color: #fff;
-  width: 13vw; 
+  width: 100%; 
 }
 
 .email-sent {
@@ -381,7 +376,7 @@ body{
   }
 
   .text-wrapper__title {
-      font-size: 1.6em;
+      font-size: 1.2em;
   }
 
   .main__content {
@@ -406,7 +401,7 @@ body{
 
   .button-container__button-wrapper {
       font-size: 0.8em;
-      border-radius: 7px;
+      border-radius: 5px;
       width: 100%;
       padding: 3vw;
   }
@@ -417,7 +412,7 @@ body{
 
   .input-wrapper__form-input {
       width: 100%;
-      border-radius: 7px;
+      border-radius: 5px;
       padding: 2vw;
       margin-bottom: 2vw;
   }
@@ -425,14 +420,14 @@ body{
   .input-wrapper__form-input-text {
       width: 100%;
       height: 25vw;
-      border-radius: 7px;
+      border-radius: 5px;
       padding-left: 9px;
       font-size: 1em;
   }
 
   .button-wrapper__button {
       font-size: 0.8em;
-      border-radius: 7px;
+      border-radius: 5px;
       width: 100%;
       padding: 3vw;
       margin-top: 4vw;
@@ -447,7 +442,7 @@ body{
   width: 100vw;
   display: flex;
   justify-content: center;
-  margin-bottom: 13vw;
+  margin-bottom: 12vw;
 }
 
 .projects__content {
@@ -469,7 +464,7 @@ body{
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-top: 4vw;
+  margin-top: 5vw;
   margin-bottom: 3vw;;
 }
 
@@ -484,7 +479,7 @@ body{
   display: flex;
   flex-direction: column;
   background-color: #222;
-  border-radius: 7px;
+  border-radius: 5px;
   overflow: hidden;
   transition: 0.3s ease;
   position: relative;
@@ -516,11 +511,11 @@ body{
   color: #fff;
   padding: 2vw 2.5vw;
   text-align: justify;
-  font-size: 1em;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
 .project-title {
@@ -529,8 +524,10 @@ body{
   padding-bottom: 0.7vw;
 }
 
+
 .project__button-container {
   display: flex;
+  width: 100%;
   justify-content: flex-end;
   align-self: flex-end;
   margin-top: 1vw;    
@@ -560,7 +557,7 @@ body{
 .load-button__button {
   background-color: #F5B63F;
   padding: 0.8vw;
-  border-radius: 7px;
+  border-radius: 5px;
   font-weight: 700;
   font-size: 1em;
   color: #111;
@@ -609,7 +606,7 @@ body{
 
   .load-button__button {
       font-size: 0.8em;
-      border-radius: 7px;
+      border-radius: 5px;
       width: 100%;
       padding: 3vw;
       margin-top: 5vw;
@@ -641,8 +638,10 @@ body{
 
 .section-title {
   color: #F5B63F;
-  font-weight: 700;
-  font-size: 3em;
+  font-weight: 500;
+  font-size: 2.8em;
+  display: flex;
+  justify-content: center;
 }
 
 .skills-container {
@@ -650,7 +649,6 @@ body{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap: 1vw;
   row-gap: 5vw;
-  margin-top: 4.5vw;
   margin-bottom: 4vw;
 }
 
@@ -694,7 +692,7 @@ body{
   background-color: #222;
   margin-bottom: 1vw;
   margin-top: 0.9vw;
-  border-radius: 7px;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
@@ -708,7 +706,7 @@ body{
   background-color: #222;
   margin-bottom: 1vw;
   margin-top: 0.9vw;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 .skills-image:hover {
