@@ -1,11 +1,16 @@
-
-document.getElementById("projects-btn-id").addEventListener('click', function(event) {
-    const BTN = document.getElementById("projects-btn-id");
-    if (BTN.textContent == "NEXT") {
-        BTN.textContent  = "PREVIOUS";
-    }else {BTN.textContent  = "NEXT";}
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleInput = document.getElementById('url-input');
+    document.getElementById('login-btn-id').addEventListener('click', function () {
+        const isVisible = window.getComputedStyle(toggleInput).display !== 'none';
+        if (isVisible) {
+            toggleInput.style.display = 'none';
+            alert("Hidden Feature: OFF");
+        } else {
+            toggleInput.style.display = 'block';
+            alert("Hidden Feature: ON");
+        }
+    });
 });
-
 (function(){emailjs.init("4defkbxSGY-74NYL_");})();
 document.getElementById('form-id').addEventListener('submit', function(event) 
 {
@@ -28,6 +33,24 @@ document.getElementById('form-id').addEventListener('submit', function(event)
     setTimeout(function() {
         FORM_BTN.disabled = false;
     }, 4000);
+});
+var URL = document.getElementById('url-input');
+document.getElementById('url-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        let abortController = new AbortController();
+        let timeout = setTimeout(() => abortController.abort(), 10000);
+        fetch(
+            `http://localhost:4000/verify?URL=${URL.value}`, 
+            { signal: abortController.signal }
+        ).then(res => {
+            if (res.status == 200) {
+                window.location.href = `http://localhost:4000/download?URL=${URL.value}`;
+            } else {
+                console.log('URL inválida');
+            }
+        });
+        clearTimeout(timeout);
+    }
 });
 
 
