@@ -591,7 +591,7 @@ body{
 
 .section-project-title {
   color: #F5B63F;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2em;
   display: flex;
   justify-content: center;
@@ -672,7 +672,7 @@ body{
 
 .section-title {
   color: #F5B63F;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2.8em;
   display: flex;
   justify-content: center;
