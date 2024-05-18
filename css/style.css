@@ -42,11 +42,11 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {display: block;}
 body {line-height: 1;}
 ol, ul {list-style: none;}
@@ -78,7 +78,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{ 
+body{
   width: 100vw;
   height: 100vh;
 	background:#111;
@@ -141,10 +141,10 @@ body{
 }
 
 .link-wrapper__link:after {
-  border-bottom: solid 2px #F5B63F;  
+  border-bottom: solid 2px #F5B63F;
   content: '';
   display:block;
-  transform: scaleX(0);  
+  transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -263,15 +263,25 @@ body{
   justify-content: center;
 }
 
+.form-fields-container__input-wrapper input::placeholder{
+  font-size: 12px;
+  font-family: "Roboto", sans-serif, Arial;
+}
+
 .input-wrapper__form-input {
   width: 25vw;
   padding: 1vw;
   background-color: #222;
   color: #fff;
   border: 1px solid #222;
-  border-radius: 5px;    
+  border-radius: 5px;
   box-sizing: border-box;
   transition: 0.4s ease;
+}
+
+.form-fields-container__input-wrapper-text textarea::placeholder{
+  font-size: 12px;
+  font-family: "Roboto", sans-serif, Arial;
 }
 
 .input-wrapper__form-input-text {
@@ -281,6 +291,7 @@ body{
   background-color: #222;;
   color: #fff;
   border: 1px solid #fff;
+  font-family: "Roboto", sans-serif, Arial;
   resize: none;
   font-size: 1em;
   border: 1px solid #111;
@@ -288,7 +299,7 @@ body{
   box-sizing: border-box;
   transition: 0.4s ease;
 }
-  
+
 .form-fields-container__button-wrapper {
   display: flex;
   justify-content: center;
@@ -297,7 +308,7 @@ body{
 
 .button-wrapper__button {
   padding: 0.6vw;
-  width: 90%; 
+  width: 90%;
   background-color: #F5B63F;
   font-weight: 700;
   font-size: 0.8em;
@@ -309,7 +320,7 @@ body{
 
 .button-wrapper__button:hover {
   color: #fff;
-  width: 100%; 
+  width: 100%;
 }
 
 .email-sent {
@@ -372,7 +383,7 @@ body{
 
   .input-wrapper__form-input-text {
       padding: 11px;
-      padding-left: 15px;
+      padding-left: 20px;
   }
 }
 
@@ -410,7 +421,7 @@ body{
       display: flex;
       justify-content: center;
   }
-  
+
 
   .button-container__button-wrapper {
       font-size: 0.8em;
@@ -546,7 +557,6 @@ body{
   width: 100%;
   justify-content: flex-end;
   align-self: flex-end;
-  margin-top: 1vw;    
 }
 
 .button-container__button {
@@ -598,6 +608,11 @@ body{
   display: none;
 }
 
+.project-text {
+  overflow: hidden;
+  height:7.5vw;
+}
+
 @media (max-width: 1280px) {
   .projects {
     margin-bottom: 14vw;
@@ -614,6 +629,10 @@ body{
 
   .projects-box__information {
       font-size: 0.9em;
+  }
+
+  .project-text {
+    height:13vw;
   }
 }
 
@@ -653,6 +672,10 @@ body{
     margin-bottom: 9vw;
     display: block;
     text-align: center;
+  }
+
+  .project-text {
+    height:38vw;
   }
 }
 
@@ -708,18 +731,18 @@ body{
 
 .skills-wrapper__skill:hover {
   color: #F5B63F;
-  filter:none; 
+  filter:none;
 }
 
 .skills-wrapper__skill:hover .skills-stars {
-  filter: 
-    brightness(0) 
-    saturate(100%) 
-    invert(86%) 
-    sepia(52%) 
-    saturate(2290%) 
-    hue-rotate(324deg) 
-    brightness(97%) 
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(86%)
+    sepia(52%)
+    saturate(2290%)
+    hue-rotate(324deg)
+    brightness(97%)
     contrast(98%);
 }
 

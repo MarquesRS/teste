@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* BEGIN RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+button, input[type="submit"], input[type="reset"] {background: none;color: inherit;border: none;padding: 0;font: inherit;cursor: pointer;outline: inherit;}
+textarea:focus, input:focus{outline: none;}
+/* END RESET CSS */
+        
+        .a {
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+
+        .b {
+            display: flex;
+            background-color: red;
+            flex-direction: column;
+        }
+
+        .c {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+        }
+
+        .d {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 50px;
+            width: 100%;
+            padding: 0 25px;
+            background-color: green;
+        }
+
+        .b-header {
+            display: flex;
+        }
+
+        .b-text {
+            padding-left: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ol class="a">
+        <li class="b">
+            <div class="b-header">
+                <button id="exp-1" class="c">+</button>
+                <div class="d">
+                    <h6>Information Technology Department</h6>
+                </div>
+            </div>
+            <div id="exp-1-text" class="b-text hidden">
+                <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+            </div>
+        </li>
+
+        <li class="b">
+            <div class="b-header">
+                <button id="exp-2" class="c">+</button>
+                <div class="d">
+                    <h6>UNIVALI</h6>
+                </div>
+            </div>
+            <div id="exp-2-text" class="b-text hidden">
+                <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+            </div>
+        </li>
+    </ol>
+    <div>
+        <p>gfgdfgdfgdfgdfgdfg</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const text1 = document.getElementById('exp-1-text');
+        document.getElementById('exp-1').addEventListener('click', function () {
+            if (text1.style.display == 'block') {
+                text1.style.display = 'none';
+            }
+            else {
+                text1.style.display = 'block';
+            }
+        });
+
+        const text2 = document.getElementById('exp-2-text');
+        document.getElementById('exp-2').addEventListener('click', function () {
+            if (text2.style.display == 'block') {
+                text2.style.display = 'none';
+            }
+            else {
+                text2.style.display = 'block';
+            }
+        });
+    });
+    </script>
+</body>
+</html>
