@@ -690,7 +690,7 @@ body{
 }
 
 .section-container {
-  width: 70%;
+  width: 50%;
 }
 
 .section-title {
@@ -704,9 +704,9 @@ body{
 
 .skills-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1vw;
-  row-gap: 5vw;
+  row-gap: 6vw;
   margin-bottom: 4vw;
 }
 
