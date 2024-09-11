@@ -12,575 +12,365 @@
     <meta name="geo.placename" content="Itajaí" />
     <title>Marquess | Software Developer</title>
     <link rel="icon" href="/media/icons/tab_icon.webp" />
-    <link rel="canonical" href="http://Marquess.ch" />
+    <link rel="canonical" href="https://marquess.ch" />
     <link rel="stylesheet" media="screen" href="css/style.css" />
   </head>
   <body>
     <div id="email-sent-id" class="email-sent">
       <p>Mensagem enviada</p>
     </div>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar__navbar-content">
-        <div class="navbar-content__navbar-text">
-          <p class="navbar-text__text"></p>
-        </div>
-        <div class="navbar-content__navbar-links">
-          <ul class="navbar-links__links-container">
-            <li class="links-container__link-wrapper">
-              <a id="login-btn-id" class="link-wrapper__link"> LOGIN </a>
-            </li>
-          </ul>
-        </div>
+    <!-- LOGIN -->
+    <div class="login-box">
+      <div class="section-login-title">
+        <h2>AUTHENTICATION</h2>
       </div>
-    </nav>
-    <!-- HOME -->
-    <main id="main-id" class="main">
-      <div class="main__content">
-        <div class="main__about-container">
-          <div class="about-container__text-wrapper">
-            <h1 class="text-wrapper__title" alt="Nome do autor: PABLO S. MARQUES">
-              <span class="--light">MARQUESS, </span>PABLO MARQUES
-            </h1>
-            <p class="text-wrapper__paragraph">
-              I'm a software developer, majoring in Computer Science. I
-              am able to create and maintain logical algorithmic solutions and
-              backends systems. I have solid knowledge in building APIs and
-              databases with advanced specialization in SQL. I know design
-              patterns and software engineering models, and I know how to work
-              well in a team, and find solutions independently, if necessary. I
-              am also skilled in using GIT for versioning.
-            </p>
-            <div class="text-wrapper__button-container">
-              <a class="button-container__button-wrapper" target="_blank"
-                href="https://www.linkedin.com/in/pablosmarques/">
-                LINKEDIN
-              </a>
-              <a class="button-container__button-wrapper" target="_blank"
-                href="https://gitlab.com/users/marquesrs/groups">
-                GITLAB
-              </a>
-            </div>
+      <form id="login-form-id">
+          <div class="login-box__input-wrapper">
+              <input class="input-wrapper__input" type="text" id="login-form-username" name="username" placeholder="USERNAME" required />
+          </div>
+          <div class="login-box__input-wrapper">
+              <input class="input-wrapper__input" type="password" id="login-form-password" name="password" placeholder="PASSWORD" required />
+          </div>
+          <div class="login-box__button-wrapper">
+              <button id="login-form-submit-btn-id" type="submit" class="button-wrapper_button">LOG IN</button>
+              <button id="login-form-cancel-btn-id" type="button" class="button-wrapper_button">CANCEL</button>
+          </div>
+      </form>
+    </div>
+    <div id="web-site-content-id">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <div class="navbar__navbar-content">
+          <div class="navbar-content__navbar-text">
+            <p class="navbar-text__text"></p>
+          </div>
+          <div class="navbar-content__navbar-links">
+            <ul class="navbar-links__links-container">
+              <li class="links-container__link-wrapper">
+                <a id="login-btn-id" class="link-wrapper__link"> LOGIN </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="main__form-container">
-          <form id="form-id" class="form-container__form-fields-container">
-            <div class="form-fields-container__input-wrapper">
-              <input
-                class="input-wrapper__form-input"
-                type="text"
-                id="form-name"
-                name="name"
-                placeholder="NAME"
-                required/>
-            </div>
-            <div class="form-fields-container__input-wrapper">
-              <input
-                class="input-wrapper__form-input"
-                type="email"
-                id="form-email"
-                name="email"
-                placeholder="E-MAIL"
-                required />
-            </div>
-            <div class="form-fields-container__input-wrapper">
-              <input
-                class="input-wrapper__form-input"
-                type="text"
-                id="form-subject"
-                name="subject"
-                placeholder="SUBJECT"
-                required />
-            </div>
-            <div class="form-fields-container__input-wrapper-text">
-              <textarea
-                class="input-wrapper__form-input-text"
-                id="form-message"
-                name="message"
-                placeholder="MESSAGE"
-                required></textarea>
-            </div>
-            <div class="form-fields-container__button-wrapper">
-              <button
-                id="form-submit-btn-id"
-                type="submit"
-                class="button-wrapper__button">
-                SEND MESSAGE
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </main>
-    <!-- PROJECTS -->
-    <section id="projects-id" class="projects">
-      <div class="projects__content">
-        <div class="section-project-title">
-          <h2>PROJECTS</h2>
-        </div>
-        <div class="projects__container">
-          <div class="projects__box-container">
-            <div class="box-container__projects-box">
-              <div class="projects-box__project-img-wrapper">
-                <a href="https://gitlab.com/marquess-projects/web-api/part-1-advanced-c-sharp-restfull-api/">
-                  <img
-                    class="project-img-wrapper__img"
-                    src="/media/projects/1.webp"
-                    alt="Project 1"
-                    width="400"
-                    height="200" />
+      </nav>
+      <!-- HOME -->
+      <main id="main-id" class="main">
+        <div class="main__content">
+          <div class="main__about-container">
+            <div class="about-container__text-wrapper">
+              <h1 class="text-wrapper__title" alt="Nome do autor: PABLO S. MARQUES">
+                <span class="--light">MARQUESS, </span>PABLO MARQUES
+              </h1>
+              <p class="text-wrapper__paragraph">
+                I'm a software developer, majoring in Computer Science. I
+                am able to create and maintain logical algorithmic solutions and
+                backends systems. I have solid knowledge in building APIs and
+                databases with advanced specialization in SQL. I know design
+                patterns and software engineering models, and I know how to work
+                well in a team, and find solutions independently, if necessary. I
+                am also skilled in using GIT for versioning.
+              </p>
+              <div class="text-wrapper__button-container">
+                <a class="button-container__button-wrapper" target="_blank"
+                  href="https://www.linkedin.com/in/pablosmarques/">
+                  LINKEDIN
+                </a>
+                <a class="button-container__button-wrapper" target="_blank"
+                  href="https://gitlab.com/users/marquesrs/groups">
+                  GITLAB
                 </a>
               </div>
-              <div class="projects-box__information">
-                <h2 class="project-title">1º Advanced C# RESTfull API</h2>
-                <p class="project-text">
-                  Clean Code & Architecture, CQRS & Mediator,
-                  Repository, Fluent validation, Extensions,
-                  Multi-Context, EF core, Automapper, Rich
-                  Model, Unit of Work, pagination/filtering
-                  and JWT with policy.
-                </p>
-                <div class="project__button-container">
-                  <a class="button-container__button" target="_blank"
-                    href="https://gitlab.com/marquess-projects/web-api/part-1-advanced-c-sharp-restfull-api/">
-                    SOURCE
+            </div>
+          </div>
+          <div class="main__form-container">
+            <form id="form-id" class="form-container__form-fields-container">
+              <div class="form-fields-container__input-wrapper">
+                <input
+                  class="input-wrapper__form-input"
+                  type="text"
+                  id="form-name"
+                  name="name"
+                  placeholder="NAME"
+                  required/>
+              </div>
+              <div class="form-fields-container__input-wrapper">
+                <input
+                  class="input-wrapper__form-input"
+                  type="email"
+                  id="form-email"
+                  name="email"
+                  placeholder="E-MAIL"
+                  required />
+              </div>
+              <div class="form-fields-container__input-wrapper">
+                <input
+                  class="input-wrapper__form-input"
+                  type="text"
+                  id="form-subject"
+                  name="subject"
+                  placeholder="SUBJECT"
+                  required />
+              </div>
+              <div class="form-fields-container__input-wrapper-text">
+                <textarea
+                  class="input-wrapper__form-input-text"
+                  id="form-message"
+                  name="message"
+                  placeholder="MESSAGE"
+                  required></textarea>
+              </div>
+              <div class="form-fields-container__button-wrapper">
+                <button
+                  id="form-submit-btn-id"
+                  type="submit"
+                  class="button-wrapper__button">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <!-- PROJECTS -->
+      <section id="projects-id" class="projects">
+        <div class="projects__content">
+          <div class="section-project-title">
+            <h2>PROJECTS</h2>
+          </div>
+          <div class="projects__container">
+            <div class="projects__box-container">
+              <div class="box-container__projects-box">
+                <div class="projects-box__project-img-wrapper">
+                  <a href="https://gitlab.com/marquess-projects/web-api/part-1-advanced-c-sharp-restfull-api/">
+                    <img
+                      class="project-img-wrapper__img"
+                      src="/media/projects/1.webp"
+                      alt="Project 1"
+                      width="400"
+                      height="200" />
                   </a>
                 </div>
+                <div class="projects-box__information">
+                  <h2 class="project-title">1º Advanced C# RESTfull API</h2>
+                  <p class="project-text">
+                    Clean Code & Architecture, CQRS & Mediator,
+                    Repository, Fluent validation, Extensions,
+                    Multi-Context, EF core, Automapper, Rich
+                    Model, Unit of Work, pagination/filtering
+                    and JWT with policy.
+                  </p>
+                  <div class="project__button-container">
+                    <a class="button-container__button" target="_blank"
+                      href="https://gitlab.com/marquess-projects/web-api/part-1-advanced-c-sharp-restfull-api/">
+                      SOURCE
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="box-container__projects-box">
-              <div class="projects-box__project-img-wrapper">
-                <a href="https://gitlab.com/marquess-projects/web-api/part-2-advanced-c-sharp-restfull-api">
-                  <img
-                    class="project-img-wrapper__img"
-                    src="/media/projects/2.webp"
-                    alt="Project 2"
-                    width="400"
-                    height="200" />
-                </a>
-              </div>
-              <div class="projects-box__information">
+              <div class="box-container__projects-box">
+                <div class="projects-box__project-img-wrapper">
+                  <a href="https://gitlab.com/marquess-projects/web-api/part-2-advanced-c-sharp-restfull-api">
+                    <img
+                      class="project-img-wrapper__img"
+                      src="/media/projects/2.webp"
+                      alt="Project 2"
+                      width="400"
+                      height="200" />
+                  </a>
+                </div>
+                <div class="projects-box__information">
 
-                <h2 class="project-title">2º Advanced C# RESTfull API</h2>
-                <p class="project-text">
-                  Events with mediator, message queuing with
-                  RabbitMQ using MassTransit lib,
-                  caching with Redis, Write database with
-                  Postgres and Read Database with MongoDB,
-                  docker, CI/CD and unit tests.
-                </p>
-                <div class="project__button-container">
-                  <a class="button-container__button" target="_blank"
-                    href="https://gitlab.com/marquess-projects/web-api/part-2-advanced-c-sharp-restfull-api">
-                    SOURCE
-                  </a>
+                  <h2 class="project-title">2º Advanced C# RESTfull API</h2>
+                  <p class="project-text">
+                    Events with mediator, message queuing with
+                    RabbitMQ using MassTransit lib,
+                    caching with Redis, Write database with
+                    Postgres and Read Database with MongoDB,
+                    docker, CI/CD and unit tests.
+                  </p>
+                  <div class="project__button-container">
+                    <a class="button-container__button" target="_blank"
+                      href="https://gitlab.com/marquess-projects/web-api/part-2-advanced-c-sharp-restfull-api">
+                      SOURCE
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="box-container__projects-box">
-              <div class="projects-box__project-img-wrapper">
-                <a href="https://www.figma.com/file/A030fEyIViRLxMRpCWdaGh/Barbershop-API-Project-(Figma)?type=design&node-id=0%3A1&mode=design&t=puqa412kZuuNTjYt-1">
-                  <img
-                    class="project-img-wrapper__img"
-                    src="/media/projects/3.webp"
-                    alt="Project 3"
-                    width="400"
-                    height="200" />
-                </a>
-              </div>
-              <div class="projects-box__information">
-                <h2 class="project-title">Barbershop API (Figma and C#)</h2>
-                <p class="project-text">
-                  Complete project in figma with all screens
-                  modularly developed with reusable
-                  elements. The complete API source code,
-                  tested and working, can be accessed at
-                  'source' button below.
-                </p>
-                <div class="project__button-container">
-                  <a class="button-container__button" target="_blank"
-                    href="https://www.figma.com/file/A030fEyIViRLxMRpCWdaGh/Barbershop-API-Project-(Figma)?type=design&node-id=0%3A1&mode=design&t=puqa412kZuuNTjYt-1">
-                    WEB VIEW
+              <div class="box-container__projects-box">
+                <div class="projects-box__project-img-wrapper">
+                  <a href="https://www.figma.com/file/A030fEyIViRLxMRpCWdaGh/Barbershop-API-Project-(Figma)?type=design&node-id=0%3A1&mode=design&t=puqa412kZuuNTjYt-1">
+                    <img
+                      class="project-img-wrapper__img"
+                      src="/media/projects/3.webp"
+                      alt="Project 3"
+                      width="400"
+                      height="200" />
                   </a>
-                  <a class="button-container__button" target="_blank"
-                    href="https://gitlab.com/marquess-projects/web-api/basic-c-sharp-api-barbershop">
-                    SOURCE
-                  </a>
+                </div>
+                <div class="projects-box__information">
+                  <h2 class="project-title">Barbershop API (Figma and C#)</h2>
+                  <p class="project-text">
+                    Complete project in figma with all screens
+                    modularly developed with reusable
+                    elements. The complete API source code,
+                    tested and working, can be accessed at
+                    'source' button below.
+                  </p>
+                  <div class="project__button-container">
+                    <a class="button-container__button" target="_blank"
+                      href="https://www.figma.com/file/A030fEyIViRLxMRpCWdaGh/Barbershop-API-Project-(Figma)?type=design&node-id=0%3A1&mode=design&t=puqa412kZuuNTjYt-1">
+                      WEB VIEW
+                    </a>
+                    <a class="button-container__button" target="_blank"
+                      href="https://gitlab.com/marquess-projects/web-api/basic-c-sharp-api-barbershop">
+                      SOURCE
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- SKILLS -->
-    <section class="section" id="skills-id">
-      <div class="section-container">
-        <h2 class="section-title">
-          SKILLS
-        </h2>
-        <ol class="skills-container">
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>Rust</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/rust.webp"
-                alt="Rust skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>MySQL</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/mysql.webp "
-                alt="MySQL skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>GIT</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/git.webp"
-                alt="GIT skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>Python</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/python.webp"
-                alt="Python skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>C++</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/cpp.webp"
-                alt="C++ skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>C#</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/csharp.webp"
-                alt="C# skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>MongoDB</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/mongo.webp"
-                alt="MongoDB skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
-            </div>
-          </li>
-          <li class="skills-container__skills-wrapper">
-            <div class="skills-wrapper__skill">
-              <h3>WebAssembly</h3>
-              <img
-                class="skills-image"
-                src="/media/skills/webassembly.webp"
-                alt="Web Assembly skill"
-                width="100"
-                height="100" />
-              <ol class="skills-stars">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="1em"
-                    viewBox="0 0 576 512">
-                    <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                  </svg>
-                </li>
-              </ol>
+      </section>
+      <!-- SKILLS -->
+      <section class="section" id="skills-id">
+        <div class="section-container">
+          <h2 class="section-title">
+            SKILLS
+          </h2>
+          <ol class="skills-container">
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>Rust</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/rust.webp"
+                  alt="Rust skill"
+                  width="100"
+                  height="100" />
               </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-input">
-        <input id="url-input" style="display: none;">
-      </div>
-      2024
-    </footer>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>Axum</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/tokio-axum.webp"
+                  alt="Rust skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>MySQL</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/mysql.webp "
+                  alt="MySQL skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>GIT</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/git.webp"
+                  alt="GIT skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>Python</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/python.webp"
+                  alt="Python skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>C++</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/cpp.webp"
+                  alt="C++ skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>C#</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/csharp.webp"
+                  alt="C# skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>.NET Core</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/netcore2.webp"
+                  alt="C# skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>MongoDB</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/mongo.webp"
+                  alt="MongoDB skill"
+                  width="100"
+                  height="100" />
+              </div>
+            </li>
+            <li class="skills-container__skills-wrapper">
+              <div class="skills-wrapper__skill">
+                <h3>WebAssembly</h3>
+                <img
+                  class="skills-image"
+                  src="/media/skills/webassembly.webp"
+                  alt="Web Assembly skill"
+                  width="100"
+                  height="100" />
+                <!--
+                <ol class="skills-stars">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 576 512">
+                      <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                    </svg>
+                  </li>
+                </ol>
+              -->
+                </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-input">
+          <input id="url-input" style="display: none;">
+        </div>
+        2024
+      </footer>
+    </div>
     <!-- scripts -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/script.js"></script>

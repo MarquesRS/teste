@@ -1,18 +1,58 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
     const toggleInput = document.getElementById('url-input');
     document.getElementById('login-btn-id').addEventListener('click', function () {
         const isVisible = window.getComputedStyle(toggleInput).display !== 'none';
         if (isVisible) {
             toggleInput.style.display = 'none';
-            alert("Hidden Feature: OFF");
         } else {
             toggleInput.style.display = 'block';
-            alert("Hidden Feature: ON");
         }
+        document.querySelector('.login-box').classList.remove('fade-out');
+        document.querySelector('.login-box').classList.add('fade-in');
+        document.getElementById('web-site-content-id').classList.add('hidden');
+    });
+
+    document.getElementById('login-form-cancel-btn-id').addEventListener('click', function() {
+        document.querySelector('.login-box').classList.remove('fade-in');
+        document.querySelector('.login-box').classList.add('fade-out');
+        document.getElementById('web-site-content-id').classList.remove('hidden');
+    });
+
+    document.getElementById('login-form-submit-btn-id').addEventListener('click', function(event) {
+        event.preventDefault();
+        const username = document.getElementById("login-form-username").value;
+        const password = document.getElementById("login-form-password").value;
+
+        fetch("https://marquess.ch/api/auth/login", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: username,
+                password: password
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === "OK" && data.token) {
+                document.cookie = `authToken=${data.token}; path=/; secure; HttpOnly`;
+                document.querySelector('.login-box').classList.remove('fade-in');
+                document.querySelector('.login-box').classList.add('fade-out');
+                document.getElementById('web-site-content-id').classList.remove('hidden');
+            }
+            else {
+                alert('Falha no login!');
+            }
+        })
+        .catch(error => {
+            console.error("lgoin error: ", error);
+        })
     });
 });
+
 (function(){emailjs.init("4defkbxSGY-74NYL_");})();
-document.getElementById('form-id').addEventListener('submit', function(event) 
+document.getElementById('form-id').addEventListener('submit', async function(event) 
 {
     event.preventDefault();
     email_object = {
@@ -34,8 +74,10 @@ document.getElementById('form-id').addEventListener('submit', function(event)
         FORM_BTN.disabled = false;
     }, 4000);
 });
+
 var URL = document.getElementById('url-input');
-document.getElementById('url-input').addEventListener('keydown', function(event) {
+document.getElementById('url-input').addEventListener('keydown', async function(event) {
+/*
     if (event.key === 'Enter') {
         let abortController = new AbortController();
         let timeout = setTimeout(() => abortController.abort(), 10000);
@@ -51,6 +93,5 @@ document.getElementById('url-input').addEventListener('keydown', function(event)
         });
         clearTimeout(timeout);
     }
+*/
 });
-
-
