@@ -1,3 +1,9 @@
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
 document.addEventListener('DOMContentLoaded', async function () {
     const toggleInput = document.getElementById('url-input');
     document.getElementById('login-btn-id').addEventListener('click', function () {
@@ -20,8 +26,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     document.getElementById('login-form-submit-btn-id').addEventListener('click', function(event) {
         event.preventDefault();
-        const username = document.getElementById("login-form-username").value;
-        const password = document.getElementById("login-form-password").value;
+        const username = document.getElementById("login-form-username");
+        const password = document.getElementById("login-form-password");
 
         fetch("https://marquess.ch/api/auth/login", {
             method: "POST",
@@ -29,24 +35,28 @@ document.addEventListener('DOMContentLoaded', async function () {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                username: username,
-                password: password
+                username: username.value,
+                password: password.value
             })
         })
         .then(response => response.json())
         .then(data => {
-            if (data.status === "OK" && data.token) {
-                document.cookie = `authToken=${data.token}; path=/; secure; HttpOnly`;
+            console.log('Response:', data);
+            if (data.status === "Ok") {
+                document.cookie = `authToken=${data.token}; path=/;`;
                 document.querySelector('.login-box').classList.remove('fade-in');
                 document.querySelector('.login-box').classList.add('fade-out');
                 document.getElementById('web-site-content-id').classList.remove('hidden');
+                username.value = "";
+                password.value = "";
+                console.log(getCookie('authToken'));
             }
             else {
-                alert('Falha no login!');
+                username.value = "";
+                password.value = "";
+                username.placeholder = "Invalid username or password";
+                password.placeholder = "Invalid username or password";
             }
-        })
-        .catch(error => {
-            console.error("lgoin error: ", error);
         })
     });
 });
