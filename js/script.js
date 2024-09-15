@@ -3,7 +3,29 @@ function getCookie(name) {
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
-
+let activeButton = null;
+document.querySelectorAll('.dropdown-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const dropdownContent = button.nextElementSibling;
+        const isVisible = dropdownContent.classList.contains('show');
+        document.querySelectorAll('.dropdown-content').forEach(content => {
+            content.classList.remove('show');
+        });
+        if (!isVisible) {
+            dropdownContent.classList.add('show');
+        }
+        if (activeButton && activeButton !== button) {
+            activeButton.style.backgroundColor = ''; 
+        }
+        if (button !== activeButton) {
+            button.style.backgroundColor = '#F5B63F'; 
+            activeButton = button; 
+        } else {
+            button.style.backgroundColor = '';
+            activeButton = null; 
+        }
+    });
+});
 document.addEventListener('DOMContentLoaded', async function () {
     const toggleInput = document.getElementById('url-input');
     document.getElementById('login-btn-id').addEventListener('click', function () {

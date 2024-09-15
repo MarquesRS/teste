@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/Roboto-Light.ttf");
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -324,7 +324,7 @@ body{
 /* ABOUT */
 
 .--light {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .about-container__text-wrapper {
@@ -482,6 +482,12 @@ body{
   color: #fff;
 }
 
+@media (max-width: 1600px) {
+  .text-wrapper__title {
+    font-size: 2.4em;
+  }
+}
+
 @media (max-width: 1366px) {
   .main {
     margin-bottom: 13vw;
@@ -610,7 +616,7 @@ body{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 12vw;
+  margin-bottom: 10vw;
 }
 
 .projects__content {
@@ -746,6 +752,7 @@ body{
   display: flex;
   justify-content: center;
   display: none;
+
 }
 
 .project-text {
@@ -820,6 +827,108 @@ body{
 }
 
 /* END PROJECTS */
+
+/* BEGIN EXPERIENCE */
+:root {
+  --swiper-pagination-color: #F5B63F;
+  --swiper-pagination-bullet-inactive-color: #F5B63F;
+}
+
+.experience-wrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+
+.education-wrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+
+swiper-slide {
+  display: flex;
+  background-color: #222;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.swiper-slide__slide-wrapper {
+  border-radius: 5px;
+  text-align: justify;
+  color: #fff;
+  padding: 50px;
+  width: 100%;
+}
+
+.slide-wrapper__content {
+  line-height: 1.8;
+}
+
+.slide-wrapper__content::first-line {
+  font-weight: 500;
+}
+
+.slide-wrapper__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.slide-wrapper__title h6 {
+  color: #F5B63F;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+}
+
+.slide-wrapper__title p {
+  font-weight: 400;
+  color: #F5B63F;
+  margin: 0;
+}
+
+.experience-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11vw;
+}
+
+.experience-section-container {
+  /*width: 59.96vw;*/
+  width: 58vw;
+}
+
+.experience-section-title {
+  color: #F5B63F;
+  font-weight: 300;
+  font-size: 2.8em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vw;
+}
+
+@media (max-width: 1366px) {
+  .experience-section-title {
+    font-size: 2.6em;
+  }
+}
+
+@media (max-width: 450px) {
+  .experience-section-title {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+/* END EXPERIENCE */
 
 /* BEGIN SKILLS */
 
@@ -981,7 +1090,7 @@ footer {
   height: 2vw;
   width: 100%;
   background-color: hsl(0, 0%, 13%);
-  margin-top: 9%;
+  margin-top: 10%;
   color: #777;
   display: flex;
   justify-content: center;
