@@ -127,3 +127,29 @@ document.getElementById('url-input').addEventListener('keydown', async function(
     }
 */
 });
+function trunc_text() {
+    let parent = document.querySelector('.swiper-slide__slide-wrapper');
+    let parent_height  = parent.clientHeight;
+    let parent_padding = parseInt(window.getComputedStyle(parent).paddingBottom);
+    let parent_len = parent_height + parent_padding;
+
+    let title = document.querySelector('.slide-wrapper__title');
+    let title_height = title.clientHeight;
+    let title_margin = parseInt(window.getComputedStyle(title).marginBottom); 
+    let title_len = title_height + title_margin;
+
+    let box_len = parent_len - title_len;
+
+    console.log(box_len);
+
+    document.querySelectorAll('.slide-wrapper__content').forEach(content => {
+        let diff = box_len - content.clientHeight;
+        
+       
+        
+        if (diff < 0) {
+            content.innerText = content.innerText.slice(0, content.clientHeight + diff) + '...';
+        }
+    });
+}
+trunc_text()

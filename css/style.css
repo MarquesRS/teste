@@ -834,22 +834,13 @@ body{
   --swiper-pagination-bullet-inactive-color: #F5B63F;
 }
 
-.experience-wrapper {
+.swiper-wrapper {
   width: 100%;
-  height: 300px;
+  height: 12.6vw;
   display: flex;
   border-radius: 5px;
   margin-bottom: 35px;
 }
-
-.education-wrapper {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  border-radius: 5px;
-  margin-bottom: 40px;
-}
-
 
 swiper-slide {
   display: flex;
@@ -862,12 +853,17 @@ swiper-slide {
   border-radius: 5px;
   text-align: justify;
   color: #fff;
-  padding: 50px;
   width: 100%;
+  box-sizing: content-box;
+  overflow: hidden;
+  padding: 30px;
 }
 
 .slide-wrapper__content {
   line-height: 1.8;
+  font-size: 14px;
+  font-weight: normal;
+  max-height: 12.5vw;
 }
 
 .slide-wrapper__content::first-line {
@@ -883,7 +879,7 @@ swiper-slide {
 .slide-wrapper__title h6 {
   color: #F5B63F;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.9em;
   margin: 0;
 }
 
